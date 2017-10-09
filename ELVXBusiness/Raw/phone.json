@@ -1,0 +1,69 @@
+{
+    "prefix": {
+        "china_mobile": [
+                         "139",
+                         "138",
+                         "137",
+                         "136",
+                         "135",
+                         "134",
+                         "178",
+                         "170",
+                         "188",
+                         "187",
+                         "183",
+                         "182",
+                         "159",
+                         "158",
+                         "157",
+                         "152",
+                         "150",
+                         "147"
+                         ],
+        "china_uniom": [
+                        "186",
+                        "185",
+                        "156",
+                        "155",
+                        "130",
+                        "131",
+                        "132"
+                        ],
+        "china_telecom": [
+                          "189",
+                          "180",
+                          "153",
+                          "133"
+                          ]
+    },
+    "medium": [
+               "AAAA",
+               "AAAB",
+               "BAAA",
+               "AABB",
+               "ABAB",
+               "ABCD"
+               ],
+    "suffix": [
+               "AAAAA",
+               "AAAA",
+               "AAA",
+               "AABBB",
+               "AAAAB",
+               "AAAB",
+               "AA",
+               "AABBCC",
+               "AABB",
+               "ABABAB",
+               "ABAB",
+               "ABCDABCD",
+               "ABCD",
+               "ABC",
+               "ABCABC",
+               "AABBCC*",
+               "ABCABC*",
+               "ABABAB*",
+               "ABC**ABC",
+               "*ABC*ABC"
+               ]
+}

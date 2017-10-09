@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA08AFE660725C3265B2FC62 /* Pods_ELVXBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEF23260B71C665AC6F4D17 /* Pods_ELVXBusiness.framework */; };
+		F2034F6B1F7A51B2005F2BAD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2034F6A1F7A51B2005F2BAD /* UIImage+Extension.swift */; };
+		F203C09A1F6A4E8900D8A7A9 /* MILRatingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203C0991F6A4E8900D8A7A9 /* MILRatingCollectionView.swift */; };
+		F22CA69E1F6796CA0090ABE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CA69D1F6796CA0090ABE2 /* AppDelegate.swift */; };
+		F22CA6A01F6796CA0090ABE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CA69F1F6796CA0090ABE2 /* ViewController.swift */; };
+		F22CA6A31F6796CA0090ABE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22CA6A11F6796CA0090ABE2 /* Main.storyboard */; };
+		F22CA6A51F6796CA0090ABE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22CA6A41F6796CA0090ABE2 /* Assets.xcassets */; };
+		F22CA6A81F6796CA0090ABE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22CA6A61F6796CA0090ABE2 /* LaunchScreen.storyboard */; };
+		F22CA6B61F67E48A0090ABE2 /* ELReqBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CA6B51F67E48A0090ABE2 /* ELReqBaseManager.swift */; };
+		F22EE3671F8B704500C0A11A /* UIScreen+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EE3661F8B704500C0A11A /* UIScreen+Extention.swift */; };
+		F249E2411F79F6A700AEA242 /* ELDatabaseConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249E2401F79F6A700AEA242 /* ELDatabaseConstant.swift */; };
+		F249E2431F7A275400AEA242 /* ELPhoneTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249E2421F7A275400AEA242 /* ELPhoneTools.swift */; };
+		F25D23841F70EA21000D89EF /* ELBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D23831F70EA21000D89EF /* ELBaseNavigationController.swift */; };
+		F25D23861F70EBA5000D89EF /* ImportHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D23851F70EBA5000D89EF /* ImportHistoryViewController.swift */; };
+		F25D30931F78AD4900631B59 /* ELContactsTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D30921F78AD4900631B59 /* ELContactsTools.swift */; };
+		F25D30951F78F1CD00631B59 /* ELDatabaseTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D30941F78F1CD00631B59 /* ELDatabaseTools.swift */; };
+		F2606A0E1F7B7A4F008F3128 /* HistoryCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2606A0D1F7B7A4F008F3128 /* HistoryCardCell.xib */; };
+		F2606A101F7B7B7B008F3128 /* HistoryCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2606A0F1F7B7B7B008F3128 /* HistoryCardCollectionCell.swift */; };
+		F278E5411F6AC9150046419D /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = F278E5401F6AC9150046419D /* phone.json */; };
+		F278E5431F6B71640046419D /* MultipleSelectCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278E5421F6B71640046419D /* MultipleSelectCollectionView.swift */; };
+		F278E5451F6B72EB0046419D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278E5441F6B72EB0046419D /* UIColor+Extension.swift */; };
+		F278E5471F6B79090046419D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278E5461F6B79090046419D /* String+Extension.swift */; };
+		F27D0F691F7F4227007030BA /* ELBaseTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D0F681F7F4227007030BA /* ELBaseTabController.swift */; };
+		F28B54091F68E3BA005AD927 /* ELPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B54081F68E3BA005AD927 /* ELPhone.swift */; };
+		F28B540B1F68E407005AD927 /* ELCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B540A1F68E407005AD927 /* ELCity.swift */; };
+		F28B540D1F68E4DC005AD927 /* ELAreaCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B540C1F68E4DC005AD927 /* ELAreaCode.swift */; };
+		F28B540F1F68E4ED005AD927 /* ELZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B540E1F68E4ED005AD927 /* ELZipCode.swift */; };
+		F28B54111F68E50D005AD927 /* ELIsp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B54101F68E50D005AD927 /* ELIsp.swift */; };
+		F28B54131F68E727005AD927 /* ELStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B54121F68E727005AD927 /* ELStandard.swift */; };
+		F28B54151F691F91005AD927 /* ELProvince.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28B54141F691F91005AD927 /* ELProvince.swift */; };
+		F28CBEB41F7B8BDD000C221E /* ELHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CBEB31F7B8BDD000C221E /* ELHistory.swift */; };
+		F28CBEB61F7B8E34000C221E /* ELHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28CBEB51F7B8E34000C221E /* ELHelpers.swift */; };
+		F29F84371F7CA58900E70B0C /* ImportHistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F84361F7CA58900E70B0C /* ImportHistoryDetailViewController.swift */; };
+		F29F84391F7CA76E00E70B0C /* PhoneDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29F84381F7CA76E00E70B0C /* PhoneDetailCell.xib */; };
+		F29F843B1F7CA86200E70B0C /* ELPhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F843A1F7CA86200E70B0C /* ELPhoneCell.swift */; };
+		F29F843D1F7CA8E400E70B0C /* HistoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29F843C1F7CA8E400E70B0C /* HistoryDetailView.xib */; };
+		F29F843F1F7CA92700E70B0C /* ELHistoryDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29F843E1F7CA92700E70B0C /* ELHistoryDetailHeaderView.swift */; };
+		F2CF90A61F67E7540003CF55 /* ELReqEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF90A51F67E7540003CF55 /* ELReqEnums.swift */; };
+		F2CF90A81F67E7780003CF55 /* ELReqConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CF90A71F67E7780003CF55 /* ELReqConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		16425FF923371AB72A6DFFE2 /* Pods-ELVXBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELVXBusiness.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELVXBusiness/Pods-ELVXBusiness.release.xcconfig"; sourceTree = "<group>"; };
+		3BEF23260B71C665AC6F4D17 /* Pods_ELVXBusiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELVXBusiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C56D2FE6E9FEB894EF4737 /* Pods-ELVXBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELVXBusiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELVXBusiness/Pods-ELVXBusiness.debug.xcconfig"; sourceTree = "<group>"; };
+		F2034F6A1F7A51B2005F2BAD /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Extensions/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		F203C0991F6A4E8900D8A7A9 /* MILRatingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MILRatingCollectionView.swift; path = View/MILRatingCollectionView.swift; sourceTree = "<group>"; };
+		F22CA69A1F6796CA0090ABE2 /* ELVXBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELVXBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22CA69D1F6796CA0090ABE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F22CA69F1F6796CA0090ABE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F22CA6A21F6796CA0090ABE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F22CA6A41F6796CA0090ABE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F22CA6A71F6796CA0090ABE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F22CA6A91F6796CA0090ABE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22CA6B51F67E48A0090ABE2 /* ELReqBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELReqBaseManager.swift; path = ReqManager/ELReqBaseManager.swift; sourceTree = "<group>"; };
+		F22EE3661F8B704500C0A11A /* UIScreen+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIScreen+Extention.swift"; path = "Extensions/UIScreen+Extention.swift"; sourceTree = "<group>"; };
+		F249E2401F79F6A700AEA242 /* ELDatabaseConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELDatabaseConstant.swift; path = DataModel/ELDatabaseConstant.swift; sourceTree = "<group>"; };
+		F249E2421F7A275400AEA242 /* ELPhoneTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELPhoneTools.swift; path = Tools/ELPhoneTools.swift; sourceTree = "<group>"; };
+		F25D23831F70EA21000D89EF /* ELBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELBaseNavigationController.swift; path = Controller/ELBaseNavigationController.swift; sourceTree = "<group>"; };
+		F25D23851F70EBA5000D89EF /* ImportHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImportHistoryViewController.swift; path = Controller/ImportHistoryViewController.swift; sourceTree = "<group>"; };
+		F25D30921F78AD4900631B59 /* ELContactsTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELContactsTools.swift; path = Tools/ELContactsTools.swift; sourceTree = "<group>"; };
+		F25D30941F78F1CD00631B59 /* ELDatabaseTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELDatabaseTools.swift; path = Tools/ELDatabaseTools.swift; sourceTree = "<group>"; };
+		F2606A0D1F7B7A4F008F3128 /* HistoryCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HistoryCardCell.xib; path = LayoutFiles/HistoryCardCell.xib; sourceTree = "<group>"; };
+		F2606A0F1F7B7B7B008F3128 /* HistoryCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryCardCollectionCell.swift; path = View/HistoryCardCollectionCell.swift; sourceTree = "<group>"; };
+		F278E5401F6AC9150046419D /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = phone.json; path = Raw/phone.json; sourceTree = "<group>"; };
+		F278E5421F6B71640046419D /* MultipleSelectCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultipleSelectCollectionView.swift; path = View/MultipleSelectCollectionView.swift; sourceTree = "<group>"; };
+		F278E5441F6B72EB0046419D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Extensions/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F278E5461F6B79090046419D /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Extensions/String+Extension.swift"; sourceTree = "<group>"; };
+		F27D0F681F7F4227007030BA /* ELBaseTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELBaseTabController.swift; path = Controller/ELBaseTabController.swift; sourceTree = "<group>"; };
+		F28B54081F68E3BA005AD927 /* ELPhone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELPhone.swift; path = DataModel/ELPhone.swift; sourceTree = "<group>"; };
+		F28B540A1F68E407005AD927 /* ELCity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELCity.swift; path = DataModel/ELCity.swift; sourceTree = "<group>"; };
+		F28B540C1F68E4DC005AD927 /* ELAreaCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELAreaCode.swift; path = DataModel/ELAreaCode.swift; sourceTree = "<group>"; };
+		F28B540E1F68E4ED005AD927 /* ELZipCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELZipCode.swift; path = DataModel/ELZipCode.swift; sourceTree = "<group>"; };
+		F28B54101F68E50D005AD927 /* ELIsp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELIsp.swift; sourceTree = "<group>"; };
+		F28B54121F68E727005AD927 /* ELStandard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELStandard.swift; path = DataModel/ELStandard.swift; sourceTree = "<group>"; };
+		F28B54141F691F91005AD927 /* ELProvince.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELProvince.swift; path = DataModel/ELProvince.swift; sourceTree = "<group>"; };
+		F28CBEB31F7B8BDD000C221E /* ELHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELHistory.swift; path = DataModel/ELHistory.swift; sourceTree = "<group>"; };
+		F28CBEB51F7B8E34000C221E /* ELHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELHelpers.swift; path = Extensions/ELHelpers.swift; sourceTree = "<group>"; };
+		F29F84361F7CA58900E70B0C /* ImportHistoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImportHistoryDetailViewController.swift; path = Controller/ImportHistoryDetailViewController.swift; sourceTree = "<group>"; };
+		F29F84381F7CA76E00E70B0C /* PhoneDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PhoneDetailCell.xib; path = LayoutFiles/PhoneDetailCell.xib; sourceTree = "<group>"; };
+		F29F843A1F7CA86200E70B0C /* ELPhoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELPhoneCell.swift; path = View/ELPhoneCell.swift; sourceTree = "<group>"; };
+		F29F843C1F7CA8E400E70B0C /* HistoryDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HistoryDetailView.xib; path = LayoutFiles/HistoryDetailView.xib; sourceTree = "<group>"; };
+		F29F843E1F7CA92700E70B0C /* ELHistoryDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELHistoryDetailHeaderView.swift; path = View/ELHistoryDetailHeaderView.swift; sourceTree = "<group>"; };
+		F2CF90A51F67E7540003CF55 /* ELReqEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELReqEnums.swift; path = ReqManager/ELReqEnums.swift; sourceTree = "<group>"; };
+		F2CF90A71F67E7780003CF55 /* ELReqConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELReqConstants.swift; path = ReqManager/ELReqConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F22CA6971F6796CA0090ABE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA08AFE660725C3265B2FC62 /* Pods_ELVXBusiness.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05986E115B230DFC60093BD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BEF23260B71C665AC6F4D17 /* Pods_ELVXBusiness.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		188F2CD52BA0A6E07EF2AC4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4C56D2FE6E9FEB894EF4737 /* Pods-ELVXBusiness.debug.xcconfig */,
+				16425FF923371AB72A6DFFE2 /* Pods-ELVXBusiness.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F203C0981F6A4E6C00D8A7A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F203C0991F6A4E8900D8A7A9 /* MILRatingCollectionView.swift */,
+				F278E5421F6B71640046419D /* MultipleSelectCollectionView.swift */,
+				F2606A0F1F7B7B7B008F3128 /* HistoryCardCollectionCell.swift */,
+				F29F843A1F7CA86200E70B0C /* ELPhoneCell.swift */,
+				F29F843E1F7CA92700E70B0C /* ELHistoryDetailHeaderView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F22CA6911F6796CA0090ABE2 = {
+			isa = PBXGroup;
+			children = (
+				F22CA69C1F6796CA0090ABE2 /* ELVXBusiness */,
+				F22CA69B1F6796CA0090ABE2 /* Products */,
+				188F2CD52BA0A6E07EF2AC4B /* Pods */,
+				05986E115B230DFC60093BD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F22CA69B1F6796CA0090ABE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F22CA69A1F6796CA0090ABE2 /* ELVXBusiness.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22CA69C1F6796CA0090ABE2 /* ELVXBusiness */ = {
+			isa = PBXGroup;
+			children = (
+				F28CBEB21F7B8BAB000C221E /* Constant */,
+				F278E53D1F6AC8BB0046419D /* Raw */,
+				F22CA6B41F67E4690090ABE2 /* Extensions */,
+				F22CA6B31F67E4610090ABE2 /* Tools */,
+				F22CA6B21F67E4560090ABE2 /* LayoutFiles */,
+				F22CA6B11F67E44D0090ABE2 /* Controller */,
+				F203C0981F6A4E6C00D8A7A9 /* View */,
+				F22CA6B01F67E4440090ABE2 /* DataModel */,
+				F22CA6AF1F67E4340090ABE2 /* ReqManager */,
+				F22CA69D1F6796CA0090ABE2 /* AppDelegate.swift */,
+				F22CA6A41F6796CA0090ABE2 /* Assets.xcassets */,
+				F22CA6A91F6796CA0090ABE2 /* Info.plist */,
+			);
+			path = ELVXBusiness;
+			sourceTree = "<group>";
+		};
+		F22CA6AF1F67E4340090ABE2 /* ReqManager */ = {
+			isa = PBXGroup;
+			children = (
+				F22CA6B51F67E48A0090ABE2 /* ELReqBaseManager.swift */,
+				F2CF90A51F67E7540003CF55 /* ELReqEnums.swift */,
+				F2CF90A71F67E7780003CF55 /* ELReqConstants.swift */,
+			);
+			name = ReqManager;
+			sourceTree = "<group>";
+		};
+		F22CA6B01F67E4440090ABE2 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F28CBEB01F7B8B78000C221E /* HistoryModel */,
+				F28CBEB11F7B8B8E000C221E /* PhoneModel */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		F22CA6B11F67E44D0090ABE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F22CA69F1F6796CA0090ABE2 /* ViewController.swift */,
+				F25D23831F70EA21000D89EF /* ELBaseNavigationController.swift */,
+				F27D0F681F7F4227007030BA /* ELBaseTabController.swift */,
+				F25D23851F70EBA5000D89EF /* ImportHistoryViewController.swift */,
+				F29F84361F7CA58900E70B0C /* ImportHistoryDetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F22CA6B21F67E4560090ABE2 /* LayoutFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F27D0F671F7F4024007030BA /* XIB */,
+				F22CA6A61F6796CA0090ABE2 /* LaunchScreen.storyboard */,
+				F22CA6A11F6796CA0090ABE2 /* Main.storyboard */,
+			);
+			name = LayoutFiles;
+			sourceTree = "<group>";
+		};
+		F22CA6B31F67E4610090ABE2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F25D30921F78AD4900631B59 /* ELContactsTools.swift */,
+				F25D30941F78F1CD00631B59 /* ELDatabaseTools.swift */,
+				F249E2421F7A275400AEA242 /* ELPhoneTools.swift */,
+				F28CBEB51F7B8E34000C221E /* ELHelpers.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		F22CA6B41F67E4690090ABE2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F278E5441F6B72EB0046419D /* UIColor+Extension.swift */,
+				F278E5461F6B79090046419D /* String+Extension.swift */,
+				F2034F6A1F7A51B2005F2BAD /* UIImage+Extension.swift */,
+				F22EE3661F8B704500C0A11A /* UIScreen+Extention.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F278E53D1F6AC8BB0046419D /* Raw */ = {
+			isa = PBXGroup;
+			children = (
+				F278E5401F6AC9150046419D /* phone.json */,
+			);
+			name = Raw;
+			sourceTree = "<group>";
+		};
+		F27D0F671F7F4024007030BA /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				F2606A0D1F7B7A4F008F3128 /* HistoryCardCell.xib */,
+				F29F84381F7CA76E00E70B0C /* PhoneDetailCell.xib */,
+				F29F843C1F7CA8E400E70B0C /* HistoryDetailView.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		F28CBEB01F7B8B78000C221E /* HistoryModel */ = {
+			isa = PBXGroup;
+			children = (
+				F28CBEB31F7B8BDD000C221E /* ELHistory.swift */,
+			);
+			name = HistoryModel;
+			sourceTree = "<group>";
+		};
+		F28CBEB11F7B8B8E000C221E /* PhoneModel */ = {
+			isa = PBXGroup;
+			children = (
+				F28B54081F68E3BA005AD927 /* ELPhone.swift */,
+				F28B54141F691F91005AD927 /* ELProvince.swift */,
+				F28B540A1F68E407005AD927 /* ELCity.swift */,
+				F28B540C1F68E4DC005AD927 /* ELAreaCode.swift */,
+				F28B540E1F68E4ED005AD927 /* ELZipCode.swift */,
+				F28B54101F68E50D005AD927 /* ELIsp.swift */,
+				F28B54121F68E727005AD927 /* ELStandard.swift */,
+			);
+			name = PhoneModel;
+			sourceTree = "<group>";
+		};
+		F28CBEB21F7B8BAB000C221E /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F249E2401F79F6A700AEA242 /* ELDatabaseConstant.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F22CA6991F6796CA0090ABE2 /* ELVXBusiness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22CA6AC1F6796CA0090ABE2 /* Build configuration list for PBXNativeTarget "ELVXBusiness" */;
+			buildPhases = (
+				1B0B412E86E08D67809499EB /* [CP] Check Pods Manifest.lock */,
+				F22CA6961F6796CA0090ABE2 /* Sources */,
+				F22CA6971F6796CA0090ABE2 /* Frameworks */,
+				F22CA6981F6796CA0090ABE2 /* Resources */,
+				7C039391DCB4B520BDD74B1E /* [CP] Embed Pods Frameworks */,
+				B85A8A556504471EC4104CBD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELVXBusiness;
+			productName = ELVXBusiness;
+			productReference = F22CA69A1F6796CA0090ABE2 /* ELVXBusiness.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F22CA6921F6796CA0090ABE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = emmet7life;
+				TargetAttributes = {
+					F22CA6991F6796CA0090ABE2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 95Z4WB6YKX;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F22CA6951F6796CA0090ABE2 /* Build configuration list for PBXProject "ELVXBusiness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F22CA6911F6796CA0090ABE2;
+			productRefGroup = F22CA69B1F6796CA0090ABE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22CA6991F6796CA0090ABE2 /* ELVXBusiness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F22CA6981F6796CA0090ABE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278E5411F6AC9150046419D /* phone.json in Resources */,
+				F22CA6A81F6796CA0090ABE2 /* LaunchScreen.storyboard in Resources */,
+				F22CA6A51F6796CA0090ABE2 /* Assets.xcassets in Resources */,
+				F29F843D1F7CA8E400E70B0C /* HistoryDetailView.xib in Resources */,
+				F29F84391F7CA76E00E70B0C /* PhoneDetailCell.xib in Resources */,
+				F22CA6A31F6796CA0090ABE2 /* Main.storyboard in Resources */,
+				F2606A0E1F7B7A4F008F3128 /* HistoryCardCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B0B412E86E08D67809499EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELVXBusiness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C039391DCB4B520BDD74B1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ELVXBusiness/Pods-ELVXBusiness-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/FileKit/FileKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/ZYCornerRadius/ZYCornerRadius.framework",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FileKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITableView_FDTemplateLayoutCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYCornerRadius.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELVXBusiness/Pods-ELVXBusiness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B85A8A556504471EC4104CBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELVXBusiness/Pods-ELVXBusiness-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F22CA6961F6796CA0090ABE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F278E5471F6B79090046419D /* String+Extension.swift in Sources */,
+				F249E2431F7A275400AEA242 /* ELPhoneTools.swift in Sources */,
+				F2606A101F7B7B7B008F3128 /* HistoryCardCollectionCell.swift in Sources */,
+				F29F843B1F7CA86200E70B0C /* ELPhoneCell.swift in Sources */,
+				F29F84371F7CA58900E70B0C /* ImportHistoryDetailViewController.swift in Sources */,
+				F28B540D1F68E4DC005AD927 /* ELAreaCode.swift in Sources */,
+				F28B54111F68E50D005AD927 /* ELIsp.swift in Sources */,
+				F28CBEB41F7B8BDD000C221E /* ELHistory.swift in Sources */,
+				F25D30951F78F1CD00631B59 /* ELDatabaseTools.swift in Sources */,
+				F28B540F1F68E4ED005AD927 /* ELZipCode.swift in Sources */,
+				F28CBEB61F7B8E34000C221E /* ELHelpers.swift in Sources */,
+				F2CF90A61F67E7540003CF55 /* ELReqEnums.swift in Sources */,
+				F249E2411F79F6A700AEA242 /* ELDatabaseConstant.swift in Sources */,
+				F22CA6A01F6796CA0090ABE2 /* ViewController.swift in Sources */,
+				F29F843F1F7CA92700E70B0C /* ELHistoryDetailHeaderView.swift in Sources */,
+				F2034F6B1F7A51B2005F2BAD /* UIImage+Extension.swift in Sources */,
+				F203C09A1F6A4E8900D8A7A9 /* MILRatingCollectionView.swift in Sources */,
+				F28B540B1F68E407005AD927 /* ELCity.swift in Sources */,
+				F22CA6B61F67E48A0090ABE2 /* ELReqBaseManager.swift in Sources */,
+				F27D0F691F7F4227007030BA /* ELBaseTabController.swift in Sources */,
+				F25D23841F70EA21000D89EF /* ELBaseNavigationController.swift in Sources */,
+				F22CA69E1F6796CA0090ABE2 /* AppDelegate.swift in Sources */,
+				F278E5451F6B72EB0046419D /* UIColor+Extension.swift in Sources */,
+				F28B54131F68E727005AD927 /* ELStandard.swift in Sources */,
+				F25D23861F70EBA5000D89EF /* ImportHistoryViewController.swift in Sources */,
+				F278E5431F6B71640046419D /* MultipleSelectCollectionView.swift in Sources */,
+				F2CF90A81F67E7780003CF55 /* ELReqConstants.swift in Sources */,
+				F22EE3671F8B704500C0A11A /* UIScreen+Extention.swift in Sources */,
+				F28B54151F691F91005AD927 /* ELProvince.swift in Sources */,
+				F28B54091F68E3BA005AD927 /* ELPhone.swift in Sources */,
+				F25D30931F78AD4900631B59 /* ELContactsTools.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F22CA6A11F6796CA0090ABE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22CA6A21F6796CA0090ABE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F22CA6A61F6796CA0090ABE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22CA6A71F6796CA0090ABE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F22CA6AA1F6796CA0090ABE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F22CA6AB1F6796CA0090ABE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F22CA6AD1F6796CA0090ABE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C56D2FE6E9FEB894EF4737 /* Pods-ELVXBusiness.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95Z4WB6YKX;
+				INFOPLIST_FILE = ELVXBusiness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmet7life.el.vxtools.ELVXBusiness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F22CA6AE1F6796CA0090ABE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16425FF923371AB72A6DFFE2 /* Pods-ELVXBusiness.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95Z4WB6YKX;
+				INFOPLIST_FILE = ELVXBusiness/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emmet7life.el.vxtools.ELVXBusiness;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F22CA6951F6796CA0090ABE2 /* Build configuration list for PBXProject "ELVXBusiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22CA6AA1F6796CA0090ABE2 /* Debug */,
+				F22CA6AB1F6796CA0090ABE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22CA6AC1F6796CA0090ABE2 /* Build configuration list for PBXNativeTarget "ELVXBusiness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22CA6AD1F6796CA0090ABE2 /* Debug */,
+				F22CA6AE1F6796CA0090ABE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F22CA6921F6796CA0090ABE2 /* Project object */;
+}
