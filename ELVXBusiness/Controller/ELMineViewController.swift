@@ -10,6 +10,12 @@ import UIKit
 
 class ELMineViewController: ELBaseTableController {
 
+    // View
+    @IBOutlet weak var totalImportCountLabel: UILabel!
+
+    // Data
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +26,13 @@ class ELMineViewController: ELBaseTableController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
+
+        async(0.0, param: 0, task: { _ -> Int in
+            return ELDatabaseTools.shared.count()
+        }) { [weak self] (totalCount) in
+            self?.totalImportCountLabel.text = "\(totalCount)"
+        }
+
     }
 
     override func viewWillDisappear(_ animated: Bool) {

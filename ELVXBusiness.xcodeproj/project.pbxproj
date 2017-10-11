@@ -14,6 +14,7 @@
 		F21DBE691F8DF3FE0004447F /* ELVerificationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE681F8DF3FE0004447F /* ELVerificationUtils.swift */; };
 		F21DBE6B1F8E043A0004447F /* ELBaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE6A1F8E043A0004447F /* ELBaseTableController.swift */; };
 		F21DBE6D1F8E06A60004447F /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE6C1F8E06A60004447F /* UITableViewCell+Extension.swift */; };
+		F21DBE6F1F8E0B0F0004447F /* ELAppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE6E1F8E0B0F0004447F /* ELAppConstant.swift */; };
 		F22CA69E1F6796CA0090ABE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CA69D1F6796CA0090ABE2 /* AppDelegate.swift */; };
 		F22CA6A01F6796CA0090ABE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CA69F1F6796CA0090ABE2 /* ViewController.swift */; };
 		F22CA6A31F6796CA0090ABE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22CA6A11F6796CA0090ABE2 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		F21DBE681F8DF3FE0004447F /* ELVerificationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELVerificationUtils.swift; path = Tools/ELVerificationUtils.swift; sourceTree = "<group>"; };
 		F21DBE6A1F8E043A0004447F /* ELBaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELBaseTableController.swift; path = Controller/ELBaseTableController.swift; sourceTree = "<group>"; };
 		F21DBE6C1F8E06A60004447F /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+Extension.swift"; path = "Extensions/UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		F21DBE6E1F8E0B0F0004447F /* ELAppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELAppConstant.swift; path = DataModel/ELAppConstant.swift; sourceTree = "<group>"; };
 		F22CA69A1F6796CA0090ABE2 /* ELVXBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELVXBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22CA69D1F6796CA0090ABE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F22CA69F1F6796CA0090ABE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				F249E2401F79F6A700AEA242 /* ELDatabaseConstant.swift */,
+				F21DBE6E1F8E0B0F0004447F /* ELAppConstant.swift */,
 			);
 			name = Constant;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				F22CA69E1F6796CA0090ABE2 /* AppDelegate.swift in Sources */,
 				F278E5451F6B72EB0046419D /* UIColor+Extension.swift in Sources */,
 				F28B54131F68E727005AD927 /* ELStandard.swift in Sources */,
+				F21DBE6F1F8E0B0F0004447F /* ELAppConstant.swift in Sources */,
 				F25D23861F70EBA5000D89EF /* ImportHistoryViewController.swift in Sources */,
 				F278E5431F6B71640046419D /* MultipleSelectCollectionView.swift in Sources */,
 				F2CF90A81F67E7780003CF55 /* ELReqConstants.swift in Sources */,

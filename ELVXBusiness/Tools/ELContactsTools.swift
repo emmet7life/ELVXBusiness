@@ -109,21 +109,24 @@ extension ELContactsTools {
 
     fileprivate func importsInternal(to phones: [ELPhone]) {
 
-        func format(_ num: Int) -> String {
-            if num < 10 {
-                return "00000\(num)"
-            } else if num < 100 {
-                return "0000\(num)"
-            } else if num < 1000 {
-                return "000\(num)"
-            } else if num < 10000 {
-                return "00\(num)"
-            } else if num < 100000 {
-                return "0\(num)"
-            }  else {
-                return "\(num)"
-            }
-        }
+        let familyNameLabel = "\(kAppDisplayName)联系人数据"
+        let noteLabel = "本数据由\(kAppDisplayName)APP生成"
+
+//        func format(_ num: Int) -> String {
+//            if num < 10 {
+//                return "00000\(num)"
+//            } else if num < 100 {
+//                return "0000\(num)"
+//            } else if num < 1000 {
+//                return "000\(num)"
+//            } else if num < 10000 {
+//                return "00\(num)"
+//            } else if num < 100000 {
+//                return "0\(num)"
+//            }  else {
+//                return "\(num)"
+//            }
+//        }
 
         delegate?.elContactsToolsStartImports()
 
@@ -143,9 +146,10 @@ extension ELContactsTools {
                 for phone in phones {
                     // 保存联系人数据到手机
                     let contact = CNMutableContact()
-                    contact.givenName = format(count)
-                    contact.familyName = "EL助手联系人数据"
-                    contact.note = "本数据由EL助手生成"
+
+                    contact.givenName = "\(phone.province)-\(phone.city)-\(count)"
+                    contact.familyName = familyNameLabel
+                    contact.note = noteLabel
                     contact.contactType = .person
                     let phoneValue = CNLabeledValue(label: CNLabelPhoneNumberMobile, value: CNPhoneNumber(stringValue: phone.mobile))
                     contact.phoneNumbers = [phoneValue]
@@ -183,9 +187,9 @@ extension ELContactsTools {
                     // 保存联系人数据到手机
                     let person: ABRecord! = ABPersonCreate().takeRetainedValue()
 
-                    ABRecordSetValue(person, kABPersonFirstNameProperty, "EL助手联系人数据" as CFTypeRef!, &error)
-                    ABRecordSetValue(person, kABPersonLastNameProperty, format(count) as CFTypeRef!, &error)
-                    ABRecordSetValue(person, kABPersonNoteProperty, "本数据由EL助手生成" as CFTypeRef!, &error)
+                    ABRecordSetValue(person, kABPersonFirstNameProperty, "\(phone.province)-\(phone.city)-\(count)" as CFTypeRef!, &error)
+                    ABRecordSetValue(person, kABPersonLastNameProperty, familyNameLabel as CFTypeRef!, &error)
+                    ABRecordSetValue(person, kABPersonNoteProperty, noteLabel as CFTypeRef!, &error)
 
                     let multi: ABMutableMultiValue = ABMultiValueCreateMutable(ABPropertyType(kABStringPropertyType)).takeRetainedValue()
                     ABMultiValueAddValueAndLabel(multi, phone.mobile as CFTypeRef!, kABPersonPhoneMobileLabel,  nil)

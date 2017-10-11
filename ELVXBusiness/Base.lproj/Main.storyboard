@@ -527,10 +527,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="bRS-pw-NZ4">
-                                                    <rect key="frame" x="163.5" y="26" width="48" height="48"/>
+                                                    <rect key="frame" x="169.5" y="34.5" width="36" height="31"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本 1.0.0.201710101826" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZB-e5-TCe">
-                                                    <rect key="frame" x="123.5" y="76" width="128.5" height="13.5"/>
+                                                    <rect key="frame" x="123.5" y="73.5" width="128.5" height="13.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.5999458432" green="0.60003471370000006" blue="0.59992641209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -539,7 +539,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="dZB-e5-TCe" firstAttribute="centerX" secondItem="bRS-pw-NZ4" secondAttribute="centerX" id="Elg-z9-wM8"/>
-                                                <constraint firstItem="dZB-e5-TCe" firstAttribute="top" secondItem="bRS-pw-NZ4" secondAttribute="bottom" constant="2" id="NSj-aF-nXZ"/>
+                                                <constraint firstItem="dZB-e5-TCe" firstAttribute="top" secondItem="bRS-pw-NZ4" secondAttribute="bottom" constant="8" id="NSj-aF-nXZ"/>
                                                 <constraint firstItem="bRS-pw-NZ4" firstAttribute="centerY" secondItem="W8A-sm-3eY" secondAttribute="centerY" id="aWE-dw-IAi"/>
                                                 <constraint firstItem="bRS-pw-NZ4" firstAttribute="centerX" secondItem="W8A-sm-3eY" secondAttribute="centerX" id="hae-ab-pxq"/>
                                             </constraints>
@@ -555,6 +555,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ygd-rA-o8o"/>
+                    <connections>
+                        <outlet property="totalImportCountLabel" destination="iOZ-TQ-Kju" id="MRE-XN-Zj1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3em-2S-V9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -756,7 +759,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="app_icon" width="48" height="48"/>
+        <image name="app_icon" width="36" height="31"/>
         <image name="arrow_right" width="24" height="45"/>
         <image name="toolbox_phone" width="32" height="40"/>
         <image name="user_head_1" width="64" height="64"/>
