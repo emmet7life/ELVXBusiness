@@ -80,8 +80,8 @@ class ImportHistoryDetailViewController: UITableViewController {
 
 
                 // 导入全部
-                let importAllBarButtonItem = UIBarButtonItem(title: "全部导入", style: .plain, target: self, action: #selector(ImportHistoryDetailViewController.onImportAllBatButtonItemTapped))
-                weakSelf?.navigationItem.rightBarButtonItem = importAllBarButtonItem
+//                let importAllBarButtonItem = UIBarButtonItem(title: "全部导入", style: .plain, target: self, action: #selector(ImportHistoryDetailViewController.onImportAllBatButtonItemTapped))
+//                weakSelf?.navigationItem.rightBarButtonItem = importAllBarButtonItem
             }
         }
     }

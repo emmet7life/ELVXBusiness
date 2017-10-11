@@ -10,6 +10,10 @@
 		CA08AFE660725C3265B2FC62 /* Pods_ELVXBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEF23260B71C665AC6F4D17 /* Pods_ELVXBusiness.framework */; };
 		F2034F6B1F7A51B2005F2BAD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2034F6A1F7A51B2005F2BAD /* UIImage+Extension.swift */; };
 		F203C09A1F6A4E8900D8A7A9 /* MILRatingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F203C0991F6A4E8900D8A7A9 /* MILRatingCollectionView.swift */; };
+		F21DBE671F8DCF980004447F /* ELMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE661F8DCF980004447F /* ELMineViewController.swift */; };
+		F21DBE691F8DF3FE0004447F /* ELVerificationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE681F8DF3FE0004447F /* ELVerificationUtils.swift */; };
+		F21DBE6B1F8E043A0004447F /* ELBaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE6A1F8E043A0004447F /* ELBaseTableController.swift */; };
+		F21DBE6D1F8E06A60004447F /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21DBE6C1F8E06A60004447F /* UITableViewCell+Extension.swift */; };
 		F22CA69E1F6796CA0090ABE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CA69D1F6796CA0090ABE2 /* AppDelegate.swift */; };
 		F22CA6A01F6796CA0090ABE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CA69F1F6796CA0090ABE2 /* ViewController.swift */; };
 		F22CA6A31F6796CA0090ABE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22CA6A11F6796CA0090ABE2 /* Main.storyboard */; };
@@ -19,6 +23,12 @@
 		F22EE3671F8B704500C0A11A /* UIScreen+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EE3661F8B704500C0A11A /* UIScreen+Extention.swift */; };
 		F249E2411F79F6A700AEA242 /* ELDatabaseConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249E2401F79F6A700AEA242 /* ELDatabaseConstant.swift */; };
 		F249E2431F7A275400AEA242 /* ELPhoneTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F249E2421F7A275400AEA242 /* ELPhoneTools.swift */; };
+		F24DE7361F8CC7E0004D0AE7 /* ELQueryPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DE7351F8CC7E0004D0AE7 /* ELQueryPhoneController.swift */; };
+		F24E2D5D1F8C69B6003B531D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E2D5C1F8C69B6003B531D /* UIFont+Extension.swift */; };
+		F24E2D631F8C6E53003B531D /* ELToolsBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E2D621F8C6E53003B531D /* ELToolsBoxController.swift */; };
+		F24E2D651F8C7361003B531D /* ELToolsBoxCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E2D641F8C7361003B531D /* ELToolsBoxCollectionCell.swift */; };
+		F24E2D681F8C7C25003B531D /* ELToolsBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E2D671F8C7C25003B531D /* ELToolsBox.swift */; };
+		F24E2D6A1F8CC1D5003B531D /* ELBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E2D691F8CC1D5003B531D /* ELBaseController.swift */; };
 		F25D23841F70EA21000D89EF /* ELBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D23831F70EA21000D89EF /* ELBaseNavigationController.swift */; };
 		F25D23861F70EBA5000D89EF /* ImportHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D23851F70EBA5000D89EF /* ImportHistoryViewController.swift */; };
 		F25D30931F78AD4900631B59 /* ELContactsTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D30921F78AD4900631B59 /* ELContactsTools.swift */; };
@@ -54,6 +64,10 @@
 		C4C56D2FE6E9FEB894EF4737 /* Pods-ELVXBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELVXBusiness.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELVXBusiness/Pods-ELVXBusiness.debug.xcconfig"; sourceTree = "<group>"; };
 		F2034F6A1F7A51B2005F2BAD /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Extensions/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		F203C0991F6A4E8900D8A7A9 /* MILRatingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MILRatingCollectionView.swift; path = View/MILRatingCollectionView.swift; sourceTree = "<group>"; };
+		F21DBE661F8DCF980004447F /* ELMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELMineViewController.swift; path = Controller/ELMineViewController.swift; sourceTree = "<group>"; };
+		F21DBE681F8DF3FE0004447F /* ELVerificationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELVerificationUtils.swift; path = Tools/ELVerificationUtils.swift; sourceTree = "<group>"; };
+		F21DBE6A1F8E043A0004447F /* ELBaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELBaseTableController.swift; path = Controller/ELBaseTableController.swift; sourceTree = "<group>"; };
+		F21DBE6C1F8E06A60004447F /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+Extension.swift"; path = "Extensions/UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		F22CA69A1F6796CA0090ABE2 /* ELVXBusiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELVXBusiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22CA69D1F6796CA0090ABE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F22CA69F1F6796CA0090ABE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +79,12 @@
 		F22EE3661F8B704500C0A11A /* UIScreen+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIScreen+Extention.swift"; path = "Extensions/UIScreen+Extention.swift"; sourceTree = "<group>"; };
 		F249E2401F79F6A700AEA242 /* ELDatabaseConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELDatabaseConstant.swift; path = DataModel/ELDatabaseConstant.swift; sourceTree = "<group>"; };
 		F249E2421F7A275400AEA242 /* ELPhoneTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELPhoneTools.swift; path = Tools/ELPhoneTools.swift; sourceTree = "<group>"; };
+		F24DE7351F8CC7E0004D0AE7 /* ELQueryPhoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELQueryPhoneController.swift; path = Controller/ELQueryPhoneController.swift; sourceTree = "<group>"; };
+		F24E2D5C1F8C69B6003B531D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont+Extension.swift"; path = "Extensions/UIFont+Extension.swift"; sourceTree = "<group>"; };
+		F24E2D621F8C6E53003B531D /* ELToolsBoxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELToolsBoxController.swift; path = Controller/ELToolsBoxController.swift; sourceTree = "<group>"; };
+		F24E2D641F8C7361003B531D /* ELToolsBoxCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELToolsBoxCollectionCell.swift; path = View/ELToolsBoxCollectionCell.swift; sourceTree = "<group>"; };
+		F24E2D671F8C7C25003B531D /* ELToolsBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELToolsBox.swift; path = DataModel/ELToolsBox.swift; sourceTree = "<group>"; };
+		F24E2D691F8CC1D5003B531D /* ELBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ELBaseController.swift; path = Controller/ELBaseController.swift; sourceTree = "<group>"; };
 		F25D23831F70EA21000D89EF /* ELBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELBaseNavigationController.swift; path = Controller/ELBaseNavigationController.swift; sourceTree = "<group>"; };
 		F25D23851F70EBA5000D89EF /* ImportHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImportHistoryViewController.swift; path = Controller/ImportHistoryViewController.swift; sourceTree = "<group>"; };
 		F25D30921F78AD4900631B59 /* ELContactsTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELContactsTools.swift; path = Tools/ELContactsTools.swift; sourceTree = "<group>"; };
@@ -131,8 +151,17 @@
 				F2606A0F1F7B7B7B008F3128 /* HistoryCardCollectionCell.swift */,
 				F29F843A1F7CA86200E70B0C /* ELPhoneCell.swift */,
 				F29F843E1F7CA92700E70B0C /* ELHistoryDetailHeaderView.swift */,
+				F24E2D641F8C7361003B531D /* ELToolsBoxCollectionCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F21DBE651F8DCF770004447F /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F21DBE661F8DCF980004447F /* ELMineViewController.swift */,
+			);
+			name = Mine;
 			sourceTree = "<group>";
 		};
 		F22CA6911F6796CA0090ABE2 = {
@@ -185,6 +214,7 @@
 		F22CA6B01F67E4440090ABE2 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				F24E2D661F8C7542003B531D /* ToolsBoxModel */,
 				F28CBEB01F7B8B78000C221E /* HistoryModel */,
 				F28CBEB11F7B8B8E000C221E /* PhoneModel */,
 			);
@@ -194,11 +224,11 @@
 		F22CA6B11F67E44D0090ABE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F22CA69F1F6796CA0090ABE2 /* ViewController.swift */,
-				F25D23831F70EA21000D89EF /* ELBaseNavigationController.swift */,
-				F27D0F681F7F4227007030BA /* ELBaseTabController.swift */,
-				F25D23851F70EBA5000D89EF /* ImportHistoryViewController.swift */,
-				F29F84361F7CA58900E70B0C /* ImportHistoryDetailViewController.swift */,
+				F21DBE651F8DCF770004447F /* Mine */,
+				F24E2D611F8C6E22003B531D /* Base */,
+				F24E2D601F8C6E15003B531D /* Tools */,
+				F24E2D5F1F8C6E0D003B531D /* History */,
+				F24E2D5E1F8C6E07003B531D /* Main */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -220,6 +250,7 @@
 				F25D30941F78F1CD00631B59 /* ELDatabaseTools.swift */,
 				F249E2421F7A275400AEA242 /* ELPhoneTools.swift */,
 				F28CBEB51F7B8E34000C221E /* ELHelpers.swift */,
+				F21DBE681F8DF3FE0004447F /* ELVerificationUtils.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -231,8 +262,55 @@
 				F278E5461F6B79090046419D /* String+Extension.swift */,
 				F2034F6A1F7A51B2005F2BAD /* UIImage+Extension.swift */,
 				F22EE3661F8B704500C0A11A /* UIScreen+Extention.swift */,
+				F24E2D5C1F8C69B6003B531D /* UIFont+Extension.swift */,
+				F21DBE6C1F8E06A60004447F /* UITableViewCell+Extension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F24E2D5E1F8C6E07003B531D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F22CA69F1F6796CA0090ABE2 /* ViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		F24E2D5F1F8C6E0D003B531D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				F29F84361F7CA58900E70B0C /* ImportHistoryDetailViewController.swift */,
+				F25D23851F70EBA5000D89EF /* ImportHistoryViewController.swift */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		F24E2D601F8C6E15003B531D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F24E2D621F8C6E53003B531D /* ELToolsBoxController.swift */,
+				F24DE7351F8CC7E0004D0AE7 /* ELQueryPhoneController.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		F24E2D611F8C6E22003B531D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F25D23831F70EA21000D89EF /* ELBaseNavigationController.swift */,
+				F27D0F681F7F4227007030BA /* ELBaseTabController.swift */,
+				F24E2D691F8CC1D5003B531D /* ELBaseController.swift */,
+				F21DBE6A1F8E043A0004447F /* ELBaseTableController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		F24E2D661F8C7542003B531D /* ToolsBoxModel */ = {
+			isa = PBXGroup;
+			children = (
+				F24E2D671F8C7C25003B531D /* ELToolsBox.swift */,
+			);
+			name = ToolsBoxModel;
 			sourceTree = "<group>";
 		};
 		F278E53D1F6AC8BB0046419D /* Raw */ = {
@@ -318,7 +396,7 @@
 				TargetAttributes = {
 					F22CA6991F6796CA0090ABE2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 95Z4WB6YKX;
+						DevelopmentTeam = SW53ZW728A;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -446,27 +524,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24E2D651F8C7361003B531D /* ELToolsBoxCollectionCell.swift in Sources */,
 				F278E5471F6B79090046419D /* String+Extension.swift in Sources */,
 				F249E2431F7A275400AEA242 /* ELPhoneTools.swift in Sources */,
 				F2606A101F7B7B7B008F3128 /* HistoryCardCollectionCell.swift in Sources */,
 				F29F843B1F7CA86200E70B0C /* ELPhoneCell.swift in Sources */,
+				F24E2D6A1F8CC1D5003B531D /* ELBaseController.swift in Sources */,
+				F21DBE6B1F8E043A0004447F /* ELBaseTableController.swift in Sources */,
 				F29F84371F7CA58900E70B0C /* ImportHistoryDetailViewController.swift in Sources */,
 				F28B540D1F68E4DC005AD927 /* ELAreaCode.swift in Sources */,
 				F28B54111F68E50D005AD927 /* ELIsp.swift in Sources */,
+				F24E2D681F8C7C25003B531D /* ELToolsBox.swift in Sources */,
 				F28CBEB41F7B8BDD000C221E /* ELHistory.swift in Sources */,
 				F25D30951F78F1CD00631B59 /* ELDatabaseTools.swift in Sources */,
+				F21DBE671F8DCF980004447F /* ELMineViewController.swift in Sources */,
 				F28B540F1F68E4ED005AD927 /* ELZipCode.swift in Sources */,
 				F28CBEB61F7B8E34000C221E /* ELHelpers.swift in Sources */,
 				F2CF90A61F67E7540003CF55 /* ELReqEnums.swift in Sources */,
 				F249E2411F79F6A700AEA242 /* ELDatabaseConstant.swift in Sources */,
 				F22CA6A01F6796CA0090ABE2 /* ViewController.swift in Sources */,
+				F24E2D5D1F8C69B6003B531D /* UIFont+Extension.swift in Sources */,
 				F29F843F1F7CA92700E70B0C /* ELHistoryDetailHeaderView.swift in Sources */,
 				F2034F6B1F7A51B2005F2BAD /* UIImage+Extension.swift in Sources */,
+				F24DE7361F8CC7E0004D0AE7 /* ELQueryPhoneController.swift in Sources */,
 				F203C09A1F6A4E8900D8A7A9 /* MILRatingCollectionView.swift in Sources */,
 				F28B540B1F68E407005AD927 /* ELCity.swift in Sources */,
 				F22CA6B61F67E48A0090ABE2 /* ELReqBaseManager.swift in Sources */,
 				F27D0F691F7F4227007030BA /* ELBaseTabController.swift in Sources */,
 				F25D23841F70EA21000D89EF /* ELBaseNavigationController.swift in Sources */,
+				F21DBE691F8DF3FE0004447F /* ELVerificationUtils.swift in Sources */,
 				F22CA69E1F6796CA0090ABE2 /* AppDelegate.swift in Sources */,
 				F278E5451F6B72EB0046419D /* UIColor+Extension.swift in Sources */,
 				F28B54131F68E727005AD927 /* ELStandard.swift in Sources */,
@@ -474,7 +560,9 @@
 				F278E5431F6B71640046419D /* MultipleSelectCollectionView.swift in Sources */,
 				F2CF90A81F67E7780003CF55 /* ELReqConstants.swift in Sources */,
 				F22EE3671F8B704500C0A11A /* UIScreen+Extention.swift in Sources */,
+				F21DBE6D1F8E06A60004447F /* UITableViewCell+Extension.swift in Sources */,
 				F28B54151F691F91005AD927 /* ELProvince.swift in Sources */,
+				F24E2D631F8C6E53003B531D /* ELToolsBoxController.swift in Sources */,
 				F28B54091F68E3BA005AD927 /* ELPhone.swift in Sources */,
 				F25D30931F78AD4900631B59 /* ELContactsTools.swift in Sources */,
 			);
@@ -602,7 +690,7 @@
 			baseConfigurationReference = C4C56D2FE6E9FEB894EF4737 /* Pods-ELVXBusiness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 95Z4WB6YKX;
+				DEVELOPMENT_TEAM = SW53ZW728A;
 				INFOPLIST_FILE = ELVXBusiness/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emmet7life.el.vxtools.ELVXBusiness;
@@ -616,7 +704,7 @@
 			baseConfigurationReference = 16425FF923371AB72A6DFFE2 /* Pods-ELVXBusiness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 95Z4WB6YKX;
+				DEVELOPMENT_TEAM = SW53ZW728A;
 				INFOPLIST_FILE = ELVXBusiness/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emmet7life.el.vxtools.ELVXBusiness;

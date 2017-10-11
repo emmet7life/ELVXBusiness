@@ -31,12 +31,34 @@ class HistoryCardCollectionCell: BasePageCollectionCell {
 
     @IBOutlet weak var moreIndicatorLabel: UILabel!
 
+    @IBOutlet weak var frontContainerViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var frontContainerViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var backContainerViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet weak var backContainerViewHeightConstraint: NSLayoutConstraint!
+
     override func awakeFromNib() {
         super.awakeFromNib()
 
         customTitle.layer.shadowRadius = 2
         customTitle.layer.shadowOffset = CGSize(width: 0, height: 3)
         customTitle.layer.shadowOpacity = 0.2
+
+        let baseWidth: CGFloat = frontContainerViewWidthConstraint.constant
+        let baseHeight: CGFloat = frontContainerViewHeightConstraint.constant
+
+        if UIScreen.isPhoneDown5Plus {
+            let newWidth: CGFloat = 220.0
+            let newHeight: CGFloat = newWidth / (baseWidth / baseHeight)
+
+            frontContainerViewWidthConstraint.constant = newWidth
+            frontContainerViewHeightConstraint.constant = newHeight
+
+            backContainerViewWidthConstraint.constant = newWidth
+            backContainerViewHeightConstraint.constant = newHeight
+
+            customTitle.font = UIFont.systemMediumFont(72.0)
+        }
     }
 
     var historyData: ELHistory? {

@@ -154,9 +154,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.barTintColor = .mainColor
-
         downloadState = .wait
 
         SVProgressHUD.setDefaultStyle(.dark)
@@ -166,6 +163,8 @@ class ViewController: UIViewController {
         completeBtn.layer.cornerRadius = completeBtn.width * 0.5
         completeBtn.backgroundColor = .mainColor
 
+        phoneNumbersTableView.tableHeaderView = UIView()
+        phoneNumbersTableView.tableFooterView = UIView()
         phoneNumbersTableView.register(ELPhoneHeaderView.self, forHeaderFooterViewReuseIdentifier: ELPhoneHeaderView.identifier)
         phoneNumbersTableView.register(UINib.init(nibName: "PhoneDetailCell", bundle: nil), forCellReuseIdentifier: ELPhoneCell.identifier)
 

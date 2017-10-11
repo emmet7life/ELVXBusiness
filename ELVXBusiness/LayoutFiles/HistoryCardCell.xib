@@ -244,11 +244,15 @@
             <connections>
                 <outlet property="backConstraintY" destination="lGP-8C-dbE" id="SDJ-Zh-tMd"/>
                 <outlet property="backContainerView" destination="Nfe-DR-USh" id="fog-G9-iH0"/>
+                <outlet property="backContainerViewHeightConstraint" destination="SJq-bk-Bjb" id="DKO-NT-ViA"/>
+                <outlet property="backContainerViewWidthConstraint" destination="LSn-eb-5JT" id="Ihx-Va-bys"/>
                 <outlet property="backgroundImageView" destination="5Ee-fH-x3h" id="nt4-m2-AyV"/>
                 <outlet property="citysLabel" destination="Xjb-6z-qhX" id="BNK-sk-Y1W"/>
                 <outlet property="customTitle" destination="0UA-za-VZR" id="RZQ-Yp-gGQ"/>
                 <outlet property="frontConstraintY" destination="qLi-7M-wgB" id="6Hv-1j-Sqn"/>
                 <outlet property="frontContainerView" destination="PcZ-Sj-JYP" id="VwQ-dB-Lpj"/>
+                <outlet property="frontContainerViewHeightConstraint" destination="nPz-R2-pLX" id="MIu-yz-mNP"/>
+                <outlet property="frontContainerViewWidthConstraint" destination="H1q-xZ-BMp" id="Eq4-TJ-CyO"/>
                 <outlet property="line1CityLabel" destination="DKa-hQ-anX" id="1kI-UJ-ryn"/>
                 <outlet property="line1IspLabel" destination="uCl-Ou-cdP" id="Hqg-i5-0lN"/>
                 <outlet property="line1PhoneLabel" destination="Ogt-5j-Waj" id="xSf-6d-tLn"/>

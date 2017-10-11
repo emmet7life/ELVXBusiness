@@ -37,7 +37,18 @@ class ImportHistoryViewController: ExpandingViewController {
 
         title = "历史"
 
-        itemSize = CGSize(width: 256, height: 335)
+        let baseWidth: CGFloat = 256.0
+        let baseHeight: CGFloat = 335.0
+
+        if UIScreen.isPhoneDown5Plus {
+            let newWidth: CGFloat = 220.0
+            let newHeight: CGFloat = newWidth / (baseWidth / baseHeight)
+
+            itemSize = CGSize(width: newWidth, height: newHeight)
+        } else {
+            itemSize = CGSize(width: baseWidth, height: baseHeight)
+        }
+
         super.viewDidLoad()
 
         registerCell()
@@ -187,15 +198,18 @@ extension ImportHistoryViewController {
 //                rightButton.animationSelected(true)
 //            }
 
-            if let dates = diffTimeDate[Array(diffTimeDate.keys)[currentIndex]] {
-                navigationController?.pushViewController(ImportHistoryDetailViewController.viewController(dates: dates), animated: true)
-            }
-
+            openDetailController()
         }
 
         let open = sender.direction == .up ? true : false
         cell.cellIsOpen(open)
         cellsIsOpen[indexPath.row] = cell.isOpened
+    }
+
+    fileprivate func openDetailController() {
+        if let dates = diffTimeDate[Array(diffTimeDate.keys)[currentIndex]] {
+            navigationController?.pushViewController(ImportHistoryDetailViewController.viewController(dates: dates), animated: true)
+        }
     }
 
 }
@@ -227,6 +241,7 @@ extension ImportHistoryViewController {
 //            let phone = ELPhone(JSON.null)
 //            let history = ELHistory(createTime: "2017年09月28日", recordCount: 10, recordData: [phone])
 //            navigationController?.pushViewController(ImportHistoryDetailViewController.viewController(datas: [history]), animated: true)
+            openDetailController()
         }
     }
 

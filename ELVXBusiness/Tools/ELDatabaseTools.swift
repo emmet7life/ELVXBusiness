@@ -175,7 +175,7 @@ class ELDatabaseTools {
 
         _database?.inDatabase {
             do {
-                let result = try $0.executeQuery("select \(kCommonTableColumnCreateDate) from \(kPhonesTableName) group by \(kCommonTableColumnCreateDate);", values: nil)
+                let result = try $0.executeQuery("select \(kCommonTableColumnCreateDate) from \(kPhonesTableName) group by \(kCommonTableColumnCreateDate) order by \(kCommonTableColumnCreateDate) desc;", values: nil)
 
                 defer {
                     print("queryGroupByCreateTime >> query result close execute.")
