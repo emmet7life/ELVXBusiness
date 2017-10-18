@@ -71,6 +71,11 @@ public struct ELPhone {
     var debugDescription: String {
         return "\(isp.rawValue), \(city), \(mobile)"
     }
+
+    var description: String {
+        return "地   区：\(province),\(city)\n" + "网络制式：\(types ?? "")"
+    }
+
 }
 
 public enum ELPhonePrefix: String {

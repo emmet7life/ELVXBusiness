@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +20,40 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_launch_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Rql-oc-Ett">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版本 1.0.0.201710101826" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA3-09-uIg">
+                                <rect key="frame" x="123" y="637.5" width="128.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.5999458432" green="0.60003471370000006" blue="0.59992641209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jZ0-KS-opi">
+                                <rect key="frame" x="169" y="592" width="36" height="31"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FA3-09-uIg" firstAttribute="top" secondItem="jZ0-KS-opi" secondAttribute="bottom" constant="14.5" id="9Tk-mQ-wcp"/>
+                            <constraint firstItem="jZ0-KS-opi" firstAttribute="centerX" secondItem="FA3-09-uIg" secondAttribute="centerX" id="Cob-kd-xBh"/>
+                            <constraint firstAttribute="bottom" secondItem="Rql-oc-Ett" secondAttribute="bottom" id="G1P-WH-Chc"/>
+                            <constraint firstAttribute="trailing" secondItem="Rql-oc-Ett" secondAttribute="trailing" id="PwD-hr-IME"/>
+                            <constraint firstItem="FA3-09-uIg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qec-x4-AEo"/>
+                            <constraint firstItem="Rql-oc-Ett" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rDk-bI-2Ry"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FA3-09-uIg" secondAttribute="bottom" constant="16" id="v3s-te-kBi"/>
+                            <constraint firstItem="Rql-oc-Ett" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xar-Ke-tux"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app_icon" width="36" height="31"/>
+        <image name="app_launch_bg" width="100" height="100"/>
+    </resources>
 </document>

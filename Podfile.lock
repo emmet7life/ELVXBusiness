@@ -5,6 +5,7 @@ PODS:
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
+  - InMobiSDK (7.0.0)
   - Kingfisher (3.12.2)
   - MJRefresh (3.1.12)
   - SAMKeychain (1.5.2)
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - expanding-collection
   - FileKit
   - FMDB
+  - InMobiSDK
   - Kingfisher (~> 3.12.2)
   - MJRefresh
   - SAMKeychain
@@ -41,6 +43,7 @@ SPEC CHECKSUMS:
   expanding-collection: 0370a4efe83e6a016e0446b596444ac67c4c1460
   FileKit: 1ea916f594bc0bb9a3951f80edf92b52bb7f883c
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  InMobiSDK: 79d36a77497fbd8305b2023da72f790c41f05206
   Kingfisher: 320626678acadfcf47008b3c6841cd882050737b
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
@@ -53,6 +56,6 @@ SPEC CHECKSUMS:
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: ab171a860fde6b8854a03cd9dd35bdb02693a87b
+PODFILE CHECKSUM: e9ac4f4ac6041964414cf72cdf92c1d7562ba1a1
 
 COCOAPODS: 1.3.1

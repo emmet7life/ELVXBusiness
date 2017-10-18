@@ -265,11 +265,13 @@ class ViewController: UIViewController {
         ELContactsTools.shared.imports(to: userNeededPhoneModel, delegate: self)
     }
 
+    /// 历史
     @objc fileprivate func onHistoryBarButtonItemTapped() {
         let controller = ImportHistoryViewController.viewController()
         navigationController?.pushViewController(controller, animated: true)
     }
 
+    /// 重刷数据
     @objc fileprivate func onRefreshBarButtonItemTapped() {
         view.isUserInteractionEnabled = false
         SVProgressHUD.show()
@@ -277,6 +279,7 @@ class ViewController: UIViewController {
         startDownload()
     }
 
+    /// 排序相关
     fileprivate func reorderContent() {
         switch _orderBy {
         case .isp: orderContentByIsp(_orderIsAsc)
@@ -429,7 +432,7 @@ class ViewController: UIViewController {
 
     /// 请求手机号相关信息
     fileprivate func requestPhoneNumberDetailInfo(_ phoneNumber: String) {
-        let apiURL = "http://sj.apidata.cn/?mobile=\(phoneNumber)"
+        let apiURL = queryPhoneApi(phoneNumber)
         ELReqBaseManager.request(url: apiURL, method: .get, callback: {[weak self] (status, json, request, error) in
             self?.onReqComplete(phoneNumber, status, json, request, error)
         })
@@ -504,6 +507,11 @@ extension ViewController: ELContactsToolsDelegate {
     func elContactsToolsEndImports(_ successCount: Int) {
         SVProgressHUD.showSuccess(withStatus: "成功导入\(successCount)条数据")
         view.isUserInteractionEnabled = true
+
+        downloadState = .wait
+        generatedPhoneNumber.removeAll()
+        generatedPhoneModel.removeAll()
+        phoneNumbersTableView.reloadData()
     }
 }
 

@@ -579,27 +579,29 @@
                                 <rect key="frame" x="299" y="28" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.70196078429999997" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="scm-zs-ThT"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="xKS-3z-laC"/>
                                 </constraints>
                                 <state key="normal" title="查询">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onQueryBtnTapped:" destination="tK0-9v-TGS" eventType="touchUpInside" id="7t8-cq-Yft"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(请输入要查询的手机号，查询完成可导入该联系人数据到手机。)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-Q0-Cp9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(O(∩_∩)O查询完成可导入该联系人数据到手机。)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-Q0-Cp9">
                                 <rect key="frame" x="16" y="66" width="343" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jT2-9G-uYS">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="11" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jT2-9G-uYS">
                                 <rect key="frame" x="16" y="28" width="275" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="m7q-lS-N9X"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查询到的信息将在这里展示" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYs-Sf-pQC">
                                 <rect key="frame" x="16" y="96" width="343" height="16"/>
@@ -607,11 +609,26 @@
                                 <color key="textColor" red="0.1999788582" green="0.20001345870000001" blue="0.1999712884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBf-H4-inR">
+                                <rect key="frame" x="127" y="120" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.70196078429999997" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Ws8-rv-G61"/>
+                                </constraints>
+                                <state key="normal" title="添加到通讯录">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAddToContactBtnTapped:" destination="tK0-9v-TGS" eventType="touchUpInside" id="BSI-AQ-Cbq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wct-Q0-Cp9" firstAttribute="leading" secondItem="pzd-jl-iL0" secondAttribute="leading" constant="16" id="1nL-ZF-hdq"/>
+                            <constraint firstItem="HBf-H4-inR" firstAttribute="centerX" secondItem="cYs-Sf-pQC" secondAttribute="centerX" id="1rj-Wk-5qV"/>
                             <constraint firstAttribute="trailing" secondItem="Wct-Q0-Cp9" secondAttribute="trailing" constant="16" id="6wg-IH-hpd"/>
+                            <constraint firstItem="HBf-H4-inR" firstAttribute="top" secondItem="cYs-Sf-pQC" secondAttribute="bottom" constant="8" id="Dmu-H9-Xv1"/>
                             <constraint firstItem="cYs-Sf-pQC" firstAttribute="top" secondItem="Wct-Q0-Cp9" secondAttribute="bottom" constant="16" id="ESM-3M-GyB"/>
                             <constraint firstItem="P8S-mV-2xe" firstAttribute="leading" secondItem="jT2-9G-uYS" secondAttribute="trailing" constant="8" id="QcC-qh-EFW"/>
                             <constraint firstItem="Wct-Q0-Cp9" firstAttribute="top" secondItem="jT2-9G-uYS" secondAttribute="bottom" constant="8" id="Yqz-dS-Veh"/>
@@ -619,11 +636,19 @@
                             <constraint firstAttribute="trailing" secondItem="P8S-mV-2xe" secondAttribute="trailing" constant="16" id="iKj-Qr-vQY"/>
                             <constraint firstAttribute="trailing" secondItem="cYs-Sf-pQC" secondAttribute="trailing" constant="16" id="mkP-4B-SYd"/>
                             <constraint firstItem="cYs-Sf-pQC" firstAttribute="leading" secondItem="pzd-jl-iL0" secondAttribute="leading" constant="16" id="pIp-n0-8Gn"/>
+                            <constraint firstItem="HBf-H4-inR" firstAttribute="height" secondItem="P8S-mV-2xe" secondAttribute="height" id="pdI-h6-FQI"/>
                             <constraint firstItem="jT2-9G-uYS" firstAttribute="leading" secondItem="pzd-jl-iL0" secondAttribute="leading" constant="16" id="qIi-ur-zWo"/>
                             <constraint firstItem="P8S-mV-2xe" firstAttribute="top" secondItem="BhI-Of-nAw" secondAttribute="bottom" constant="8" id="rUK-In-m4F"/>
+                            <constraint firstItem="P8S-mV-2xe" firstAttribute="height" secondItem="jT2-9G-uYS" secondAttribute="height" id="vAr-3Y-4yP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="工具箱" id="MFt-Qd-gqo"/>
+                    <connections>
+                        <outlet property="addToContactBtn" destination="HBf-H4-inR" id="3bV-nn-7gH"/>
+                        <outlet property="phoneField" destination="jT2-9G-uYS" id="ger-Iq-WCF"/>
+                        <outlet property="queryBtn" destination="P8S-mV-2xe" id="nht-Wt-4kW"/>
+                        <outlet property="queryResultLabel" destination="cYs-Sf-pQC" id="s8J-f9-jId"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5A9-x5-l5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
