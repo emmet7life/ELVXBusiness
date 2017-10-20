@@ -13,6 +13,12 @@ import SVProgressHUD
 import SwiftyJSON
 import expanding_collection
 
+// 数据组织模式
+enum ELHistoryDataGroupMode {
+    case groupByMonth   // 按月组织
+    case groupByDay     // 按日组织
+}
+
 class ImportHistoryViewController: ExpandingViewController {
 
     class func viewController() -> UIViewController {
@@ -24,8 +30,14 @@ class ImportHistoryViewController: ExpandingViewController {
     fileprivate var cellsIsOpen = [Bool]()
 
     fileprivate var isInitDataQuery = false
+    fileprivate var dataGroupMode: ELHistoryDataGroupMode = .groupByDay
 
-    fileprivate var diffTimeDate = [String: [Date]]()
+    // Key：yyyy-MM-dd
+    // Value: Date数组。即同一天内的查询日期
+    fileprivate var diffDayDate = [String: [Date]]()
+    // Key: yyyy-MM
+    // Value: Date数组，即同一月内的查询日期
+    fileprivate var diffMonthDate = [String: [Date]]()
 
     deinit {
         SVProgressHUD.dismiss()
@@ -73,7 +85,8 @@ class ImportHistoryViewController: ExpandingViewController {
             var diffMonthDate = [Date]()
             var diffDayDate = [Date]()
 
-            var diffTimeDate = [String: [Date]]()
+            var _diffDayDate = [String: [Date]]()
+            var _diffMonthDate = [String: [Date]]()
 
             let dateFormat = DateFormatter()
             dateFormat.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
@@ -99,18 +112,31 @@ class ImportHistoryViewController: ExpandingViewController {
                     diffDayDate.append(adjustDate)
                 }
 
-                let dateKey = "\(adjustDate.year)-\(adjustDate.month)-\(adjustDate.day)"
-                if diffTimeDate[dateKey] == nil { diffTimeDate[dateKey] = [Date]() }
-                diffTimeDate[dateKey]?.append(adjustDate)
+                let yearStr = "\(adjustDate.year)"
+                let monthStr = adjustDate.month < 10 ? "0\(adjustDate.month)" : "\(adjustDate.month)"
+                let dayStr = adjustDate.day < 10 ? "0\(adjustDate.day)" : "\(adjustDate.day)"
+
+                let dayKey = yearStr + "-" + monthStr + "-" + dayStr
+                if _diffDayDate[dayKey] == nil { _diffDayDate[dayKey] = [Date]() }
+                _diffDayDate[dayKey]?.append(adjustDate)
+
+                let monthKey = yearStr + "-" + monthStr
+                if _diffMonthDate[monthKey] == nil { _diffMonthDate[monthKey] = [Date]() }
+                _diffMonthDate[monthKey]?.append(adjustDate)
 
                 print(dateFormat.string(from: adjustDate))
             }
 
-            print(diffTimeDate)
-            weakSelf.diffTimeDate = diffTimeDate
+            print(_diffDayDate)
+            print(_diffMonthDate)
 
-            // 按月组织结果
+            weakSelf.diffDayDate = _diffDayDate
+            weakSelf.diffMonthDate = _diffMonthDate
+
             if diffMonthDate.count > 1 {
+                // 按月组织结果
+
+                weakSelf.dataGroupMode = .groupByMonth
 
                 for date in diffMonthDate {
                     let monthStr = date.month < 10 ? "0\(date.month)" : "\(date.month)"
@@ -131,6 +157,9 @@ class ImportHistoryViewController: ExpandingViewController {
 
             } else if diffDayDate.count >= 1 {
                 // 按天组织结果
+
+                weakSelf.dataGroupMode = .groupByDay
+
                 print(diffDayDate)
 
                 for date in diffDayDate {
@@ -207,8 +236,18 @@ extension ImportHistoryViewController {
     }
 
     fileprivate func openDetailController() {
-        if let dates = diffTimeDate[Array(diffTimeDate.keys)[currentIndex]] {
-            navigationController?.pushViewController(ImportHistoryDetailViewController.viewController(dates: dates), animated: true)
+        var dates: [Date]?
+        switch dataGroupMode {
+        case .groupByDay:
+            // 因为字典的Key是无序的，所以要先排个序
+            let keys = diffDayDate.keys.sorted { $0 > $1 }
+            dates = diffDayDate[keys[currentIndex]]
+        case .groupByMonth:
+            let keys = diffMonthDate.keys.sorted { $0 > $1 }
+            dates = diffMonthDate[keys[currentIndex]]
+        }
+        if let _dates = dates {
+            navigationController?.pushViewController(ImportHistoryDetailViewController.viewController(dates: _dates), animated: true)
         }
     }
 
